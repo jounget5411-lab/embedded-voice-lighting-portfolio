@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="350" viewBox="0 0 1080 350" role="img" aria-labelledby="title desc">
+  <title id="title">두 Arduino 보드의 음성 처리와 조명 제어</title>
+  <desc id="desc">마이크 입력을 A보드가 특징으로 변환하고 SPI 또는 UART로 B보드에 전달합니다. B보드는 PC에서 학습한 정수 모델로 명령을 판별하며 초음파 근접 조건을 만족하면 RGB LED를 제어합니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#277c9c"/></marker>
+    <style>text{font-family:'Segoe UI','Malgun Gothic',sans-serif;fill:#172b44}.heading{font-size:22px;font-weight:700}.node-title{font-size:20px;font-weight:700}.body{font-size:18px}.note{font-size:16px}.box{fill:#fff;stroke:#ccd8e4;stroke-width:1.5}.flow{fill:none;stroke:#277c9c;stroke-width:2;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1080" height="350" rx="16" fill="#f7f9fc"/>
+  <text class="heading" x="24" y="34">음성 특징 → 명령 판별 → 조건부 출력</text>
+  <text class="note" x="24" y="61">취득·특징 계산과 분류·출력을 두 MCU에 나눕니다.</text>
+  <rect class="box" x="22" y="113" width="134" height="114" rx="12"/>
+  <text class="node-title" x="89" y="154" text-anchor="middle">마이크</text>
+  <text class="body" x="89" y="186" text-anchor="middle">MAX4466</text>
+  <rect class="box" x="192" y="113" width="261" height="114" rx="12"/>
+  <rect x="192" y="113" width="261" height="5" rx="2" fill="#277c9c"/>
+  <text class="node-title" x="210" y="146">A · Arduino UNO</text>
+  <text class="body" x="210" y="177">8 kHz ADC · 이중 버퍼</text>
+  <text class="body" x="210" y="206">정수 DSP · 8개 특징</text>
+  <rect class="box" x="502" y="113" width="289" height="114" rx="12"/>
+  <rect x="502" y="113" width="289" height="5" rx="2" fill="#24856e"/>
+  <text class="node-title" x="520" y="146">B · Arduino UNO</text>
+  <text class="body" x="520" y="177">3프레임 누적 · 정수 분류</text>
+  <text class="body" x="520" y="206">명령 안정화 · 근접 확인</text>
+  <rect class="box" x="843" y="113" width="215" height="114" rx="12"/>
+  <text class="node-title" x="950" y="146" text-anchor="middle">RGB LED</text>
+  <text class="body" x="950" y="177" text-anchor="middle">색조 · 4단계 밝기</text>
+  <text class="body" x="950" y="206" text-anchor="middle">PWM 출력</text>
+  <path class="flow" d="M156 170H188"/>
+  <path class="flow" d="M453 170H498"/>
+  <text class="note" x="479" y="101" text-anchor="middle">SPI / UART</text>
+  <path class="flow" d="M791 170H839"/>
+  <rect class="box" x="345" y="273" width="346" height="51" rx="10"/>
+  <text class="body" x="363" y="304">PC 학습 → 정수 모델 헤더</text>
+  <path class="flow" d="M646 273V232"/>
+  <text class="note" x="653" y="254">가중치</text>
+  <rect class="box" x="810" y="273" width="248" height="51" rx="10"/>
+  <text class="body" x="828" y="304">HC-SR04 · 거리 측정</text>
+  <path class="flow" d="M933 273V246H762V232"/>
+  <text class="note" x="858" y="263">근접 조건</text>
+</svg>
