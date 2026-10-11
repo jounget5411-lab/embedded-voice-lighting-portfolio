@@ -1,0 +1,61 @@
+{
+  "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+  "files": [
+    {
+      "file": "firmware/A_wclh_5/A_wclh_5.ino",
+      "source": "archive/Desktop/대학교오오/3학뇬/2학기/임시설/플젝1/시도7-spi+uart+3색 led+초음파/A_wclh_5/A_wclh_5.ino",
+      "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+      "kind": "unchanged-source",
+      "sha256": "f755a7c8c05b73c07daa657dcb0e8e900d78bc55fd94e7479e39fb526d035026",
+      "bytes": 8044
+    },
+    {
+      "file": "firmware/B_wclh_5/B_wclh_5.ino",
+      "source": "archive/Desktop/대학교오오/3학뇬/2학기/임시설/플젝1/시도7-spi+uart+3색 led+초음파/B_wclh_5 - cool크기good/B_wclh_5/B_wclh_5.ino",
+      "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+      "kind": "unchanged-source",
+      "sha256": "9b70c8b12f815d25b23c59c917902394d291ea7784c1097bc97867b7bdbf9e9f",
+      "bytes": 12514
+    },
+    {
+      "file": "firmware/B_wclh_5/weights_wclh_k5.h",
+      "source": "archive/Desktop/대학교오오/3학뇬/2학기/임시설/플젝1/시도7-spi+uart+3색 led+초음파/B_wclh_5 - cool크기good/B_wclh_5/weights_wclh_k5.h",
+      "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+      "kind": "unchanged-source",
+      "sha256": "cbe1d6d713108183c4f8d2f770fe558d7938c1401e07a19de73effda71ea5d16",
+      "bytes": 949
+    },
+    {
+      "file": "tools/prep_train_export_wclh_k5.py",
+      "source": "archive/Desktop/대학교오오/3학뇬/2학기/임시설/플젝1/파이썬 정리/prep_train_export_wclh_k5.py",
+      "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+      "kind": "unchanged-source",
+      "sha256": "3b946ded6f0eac38bc1ce10b049d54af206690a27f45dc622208e2aff88fb496",
+      "bytes": 8398
+    },
+    {
+      "file": "tools/log_features_serial_5bin.py",
+      "source": "archive/Desktop/대학교오오/3학뇬/2학기/임시설/플젝1/log_features_serial_5bin.py",
+      "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+      "kind": "unchanged-source",
+      "sha256": "626203e16ab6c21e8eefafa4930fc52f4d3f4b0bae77efd2ab25df855af21ec2",
+      "bytes": 3878
+    },
+    {
+      "file": "data/reference_features.csv",
+      "source": "archive/Desktop/대학교오오/3학뇬/2학기/임시설/플젝1/sibal/features_WarmCoolLowHigh_k5_1761501782.csv",
+      "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+      "kind": "recorded-feature-csv",
+      "sha256": "4d87b9825c8de12a26ad3aa0d896eaf694164228c2c392ee8c6bb2afb3a56c59",
+      "bytes": 629476
+    },
+    {
+      "file": "data/reference_model_meta.json",
+      "source": "archive/Desktop/대학교오오/3학뇬/2학기/임시설/플젝1/sibal/weights_wclh_k5.meta.json",
+      "source_commit": "c8618b1caef9cdf128ed20f62692d63818d9dd61",
+      "kind": "model-metadata-reference",
+      "sha256": "284c6df4992d46267acf70cca80d8ac30be2a2ffb3b7b040b9f22ea195d0ff86",
+      "bytes": 974
+    }
+  ]
+}

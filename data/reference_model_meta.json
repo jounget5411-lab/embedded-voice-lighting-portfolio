@@ -1,0 +1,61 @@
+{
+  "feature_order": [
+    "rms_u8_t-1",
+    "vpp_u8_t-1",
+    "zcr_u8_t-1",
+    "p1100_u8_t-1",
+    "p1200_u8_t-1",
+    "p2200_u8_t-1",
+    "p2300_u8_t-1",
+    "p800_u8_t-1",
+    "rms_u8_t0",
+    "vpp_u8_t0",
+    "zcr_u8_t0",
+    "p1100_u8_t0",
+    "p1200_u8_t0",
+    "p2200_u8_t0",
+    "p2300_u8_t0",
+    "p800_u8_t0",
+    "rms_u8_t1",
+    "vpp_u8_t1",
+    "zcr_u8_t1",
+    "p1100_u8_t1",
+    "p1200_u8_t1",
+    "p2200_u8_t1",
+    "p2300_u8_t1",
+    "p800_u8_t1"
+  ],
+  "base_features": [
+    "rms_u8",
+    "vpp_u8",
+    "zcr_u8"
+  ],
+  "freq_bins": [
+    1100,
+    1200,
+    2200,
+    2300,
+    800
+  ],
+  "class_order": [
+    "silence",
+    "warm",
+    "cool",
+    "low",
+    "high"
+  ],
+  "Sx": 9,
+  "Sw": 32.0,
+  "relabel": {
+    "vad_thresh": 13,
+    "top_pct": 0.3,
+    "pos_classes": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "stack": 3,
+  "note": "xi=((x-MEAN)*SCALE)>>Sx; score=W*xi+B; argmax"
+}

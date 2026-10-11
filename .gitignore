@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+Debug/
+Release/
+*.elf
+*.o
+*.d
+*.map
+.metadata/
+.idea/
+.DS_Store
