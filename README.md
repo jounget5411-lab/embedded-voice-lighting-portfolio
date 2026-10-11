@@ -4,17 +4,19 @@
 
 **ATmega328P · C/C++ · ADC/Timer ISR · 정수 DSP·추론 · SPI/UART · PWM**
 
+## 시연
+
+[![음성 조명 제어 시연 미리보기 · 약 9초](assets/demo-preview.gif)](media/demo.mp4)
+
+[전체 시연영상](media/demo.mp4) · [확인할 구간](docs/demo.md)
+
+음성에 따른 색조·밝기 변화와 근접 조건을 확인할 수 있습니다. RGB LED를 사용하는 교육용 시제품입니다.
+
 ## 전체 흐름
 
 ![두 Arduino 보드의 음성 처리·조명 제어 구조](assets/system-flow.svg)
 
 A보드는 음성 특징을 만들고, B보드는 명령을 판별해 출력합니다. PC는 모델 학습에 사용하며, 장치의 추론은 MCU에서 수행합니다. Warm/Cool은 색조, Low/High는 4단계 밝기를 조절하고 Silence는 명령으로 실행하지 않습니다.
-
-## 시연
-
-[전체 시연영상](media/demo.mp4) · [확인할 구간](docs/demo.md)
-
-음성에 따른 색조·밝기 변화와 근접 조건을 확인할 수 있습니다. RGB LED를 사용하는 교육용 시제품입니다.
 
 ## 주요 구현
 
